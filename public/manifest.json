@@ -1,0 +1,19 @@
+{
+  "name": "القراءة الفنية والأساسية",
+  "short_name": "تحليل العملات",
+  "description": "منصة متطورة للتحليل الفني والأساسي للعملات الرقمية",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050b08",
+  "theme_color": "#050b08",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

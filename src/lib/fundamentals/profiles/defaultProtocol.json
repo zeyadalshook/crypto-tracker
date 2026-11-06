@@ -1,0 +1,321 @@
+{
+  "profileId": "fee_generating_protocols",
+  "profileNameAr": "بروتوكولات وسلاسل ذات إيرادات ورسوم (DeFi & L1/L2)",
+  "profileNameEn": "Fee-Generating Protocols & Chains",
+  "version": "1.0.0",
+  "targetSector": "fee_generating",
+  "passScoreThreshold": 70,
+  "minCoverageThreshold": 60,
+  "disclaimerAr": "درجة وصفية وفق بروتوكول محدد، ليست توصية ولا توقعاً للسعر. الجودة لا تعني قيمة عادلة ولا تمنع هبوطاً حاداً",
+  "categories": [
+    {
+      "id": "tokenomics",
+      "titleAr": "التوكنومكس وجدول الفك",
+      "titleEn": "Tokenomics & Unlocks",
+      "weight": 20,
+      "criteria": [
+        {
+          "id": "tok_1_schedule",
+          "nameAr": "جدول العرض والإصدار منشور وواضح",
+          "isQualitative": true,
+          "weight": 3.333,
+          "thresholdStr": "جدول إصدار شفاف وموثق رسمياً"
+        },
+        {
+          "id": "tok_2_circ_to_max",
+          "nameAr": "نسبة المتداول إلى الأقصى (Circulating / Max)",
+          "isQualitative": false,
+          "weight": 3.333,
+          "thresholdStr": "≥50% نجاح | 25-50% جزئي | <25% فشل"
+        },
+        {
+          "id": "tok_3_unlock_12m",
+          "nameAr": "الفك خلال 12 شهراً ÷ المتداول",
+          "isQualitative": false,
+          "weight": 3.333,
+          "thresholdStr": "<15% نجاح | 15-30% جزئي | >30% فشل"
+        },
+        {
+          "id": "tok_4_inflation",
+          "nameAr": "معدل التضخم السنوي الفعلي",
+          "isQualitative": false,
+          "weight": 3.334,
+          "thresholdStr": "<5% نجاح | 5-15% جزئي | >15% فشل"
+        },
+        {
+          "id": "tok_5_top10_concentration",
+          "nameAr": "حيازة أكبر 10 عناوين بعد استبعاد البورصات والعقود وعناوين الحرق",
+          "isQualitative": false,
+          "weight": 3.333,
+          "thresholdStr": "<30% نجاح | 30-50% جزئي | >50% فشل"
+        },
+        {
+          "id": "tok_6_value_accrual",
+          "nameAr": "آلية انتقال القيمة للتوكن موثقة (حرق / مشاركة رسوم / تحفيز)",
+          "isQualitative": true,
+          "weight": 3.334,
+          "thresholdStr": "آلية اقتصادية مباشرة لتحويل الرسوم إلى قيمة لحاملي التوكن"
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "titleAr": "الإيرادات والربحية والعائد الحقيقي",
+      "titleEn": "Revenue & Real Yield",
+      "weight": 25,
+      "criteria": [
+        {
+          "id": "rev_1_annual_fees",
+          "nameAr": "رسوم البروتوكول السنوية > 0 ونمو 90 يوماً ≥ 0",
+          "isQualitative": false,
+          "weight": 4.166,
+          "thresholdStr": "رسوم سنوية موجبة ومعدل نمو 90 يوماً غير سالب"
+        },
+        {
+          "id": "rev_2_treasury_revenue",
+          "nameAr": "الإيرادات للبروتوكول / الخزينة > 0",
+          "isQualitative": false,
+          "weight": 4.166,
+          "thresholdStr": "تدفق نقدي إيجابي إلى خزينة البروتوكول"
+        },
+        {
+          "id": "rev_3_fdv_to_revenue",
+          "nameAr": "مكرر القيمة المخففة إلى الإيرادات (FDV / Annual Revenue)",
+          "isQualitative": false,
+          "weight": 4.167,
+          "thresholdStr": "≤50 نجاح | 50-150 جزئي | >150 فشل"
+        },
+        {
+          "id": "rev_4_real_yield",
+          "nameAr": "العائد الحقيقي: الإيرادات مطروحاً منها قيمة إصدار التوكنات ≥ 0",
+          "isQualitative": false,
+          "weight": 4.167,
+          "thresholdStr": "إيرادات الرسوم تتجاوز قيمة تخفيف المعروض بالانبعاثات"
+        },
+        {
+          "id": "rev_5_revenue_diversity",
+          "nameAr": "تنويع مصادر الإيراد: لا مصدر واحد > 60%",
+          "isQualitative": false,
+          "weight": 4.167,
+          "thresholdStr": "عدم الاعتماد المفرط على بركة واحدة أو عميل وحيد"
+        },
+        {
+          "id": "rev_6_revenue_sustainability",
+          "nameAr": "استمرار الإيراد ≥ 12 شهراً دون الاعتماد على حوافز مؤقتة",
+          "isQualitative": false,
+          "weight": 4.167,
+          "thresholdStr": "تاريخ تدفق رسوم 12 شهراً على الأقل ونسبة رسوم/حوافز صحية"
+        }
+      ]
+    },
+    {
+      "id": "users",
+      "titleAr": "المستخدمون والتبني والسيولة",
+      "titleEn": "Users, Adoption & Liquidity",
+      "weight": 15,
+      "criteria": [
+        {
+          "id": "usr_1_active_users_trend",
+          "nameAr": "اتجاه المستخدمين النشطين 30 يوماً خلال 90 يوماً ≥ 0",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "نمو مستقر أو إيجابي في المحافظ النشطة"
+        },
+        {
+          "id": "usr_2_tvl_growth_drawdown",
+          "nameAr": "نمو TVL خلال 12 شهراً وتراجع TVL الأقصى < 60%",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "نمو سنوي إيجابي والهبوط الأقصى للقيمة المقفلة أقل من 60%"
+        },
+        {
+          "id": "usr_3_organic_usage",
+          "nameAr": "الاستخدام العضوي: نسبة الرسوم إلى الحوافز فوق الحد",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "الرسوم العضوية تشكل الغالبية العظمى مقابل مكافآت التعدين"
+        },
+        {
+          "id": "usr_4_liquidity_depth",
+          "nameAr": "السيولة: حجم 24 ساعة ≥ الحد ومدرجة في 3 منصات كبرى",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "حجم تداول يومي ≥ 5M$ وإدراج في 3 بورصات موثوقة"
+        },
+        {
+          "id": "usr_5_sector_rank",
+          "nameAr": "ترتيب المشروع ضمن قطاعه بالرسوم أو TVL (أعلى 30%)",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "ضمن أفضل 30% من مشاريع القطاع في DefiLlama"
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "titleAr": "التطوير والنشاط البرمجي والنظام البيئي",
+      "titleEn": "Development & Ecosystem",
+      "weight": 15,
+      "criteria": [
+        {
+          "id": "dev_1_commits_contributors",
+          "nameAr": "التزامات GitHub آخر 90 يوماً ≥ 30 مع ≥ 5 مساهمين نشطين",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "≥30 commit في آخر ربع سنة و≥5 مطورين نشطين"
+        },
+        {
+          "id": "dev_2_public_releases",
+          "nameAr": "مستودعات برمجية عامة وإصدار رسمي خلال 6 أشهر",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "مستودعات كود مفتوحة مع تحديث رسمي أو release حديث"
+        },
+        {
+          "id": "dev_3_built_applications",
+          "nameAr": "عدد التطبيقات والبروتوكولات المبنية على الشبكة / البروتوكول",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "نظام بيئي نشط وتطبيقات طرف ثالث تعتمد عليه"
+        },
+        {
+          "id": "dev_4_docs_validators",
+          "nameAr": "توثيق فني عام ومدققون / عقد معلنة",
+          "isQualitative": true,
+          "weight": 3.0,
+          "thresholdStr": "توثيق شامل ومواصفات واضحة للمشغلين والمطورين"
+        },
+        {
+          "id": "dev_5_roadmap_execution",
+          "nameAr": "تنفيذ خارطة الطريق والالتزام بالمواعيد",
+          "isQualitative": true,
+          "weight": 3.0,
+          "thresholdStr": "إنجاز المعالم الرئيسية المعلنة دون تأخيرات حرجة"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "titleAr": "الأمان واللامركزية والوضع التنظيمي",
+      "titleEn": "Security & Regulatory",
+      "weight": 15,
+      "criteria": [
+        {
+          "id": "sec_1_audit_recency",
+          "nameAr": "تدقيق عقود من جهة موثوقة خلال 24 شهراً دون ثغرات معلقة",
+          "isQualitative": true,
+          "weight": 3.0,
+          "thresholdStr": "تقرير تدقيق أمني من شركات رائدة (OpenZeppelin, Trail of Bits, etc.)"
+        },
+        {
+          "id": "sec_2_no_unresolved_exploit",
+          "nameAr": "سجل الاختراقات: لا استغلال بخسارة كبيرة غير معالجة خلال 36 شهراً",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "خلو قاعدة DefiLlama Hacks من ثغرة كبرى غير معوضة"
+        },
+        {
+          "id": "sec_3_admin_keys_timelock",
+          "nameAr": "صلاحيات الإدارة والترقية: قفل زمني / متعدد توقيع Multi-Sig",
+          "isQualitative": true,
+          "weight": 3.0,
+          "thresholdStr": "غياب المفتاح الأحادي وقفل زمني لا يقل عن 48 ساعة"
+        },
+        {
+          "id": "sec_4_validator_concentration",
+          "nameAr": "لامركزية المدققين / المشغلين / المتسلسل",
+          "isQualitative": false,
+          "weight": 3.0,
+          "thresholdStr": "معامل ناكاموتو كافٍ وتنوع جغرافي وبرمجي للمدققين"
+        },
+        {
+          "id": "sec_5_regulatory_status",
+          "nameAr": "السلامة التنظيمية: لا إجراء قانوني أو تنظيمي نشط ضد المشروع",
+          "isQualitative": true,
+          "weight": 3.0,
+          "thresholdStr": "خلو السجلات من دعاوى قضائية نشطة من هيئات كبرى"
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "titleAr": "الفريق والمستثمرون والنضج والحوكمة",
+      "titleEn": "Team, Investors & Maturity",
+      "weight": 10,
+      "criteria": [
+        {
+          "id": "team_1_public_founders",
+          "nameAr": "فريق أساسي معروف بسجل مهني قابل للتحقق",
+          "isQualitative": true,
+          "weight": 2.0,
+          "thresholdStr": "مؤسسون بهوية علنية وخبرة سابقة في القطاع"
+        },
+        {
+          "id": "team_2_institutional_backers",
+          "nameAr": "مستثمرون معلنون وجولات تمويل موثقة",
+          "isQualitative": true,
+          "weight": 2.0,
+          "thresholdStr": "صناديق استثمارية ذات سمعة حسنة وجولات استثمارية معلنة"
+        },
+        {
+          "id": "team_3_project_maturity",
+          "nameAr": "عمر المشروع ≥ 24 شهراً وعبر دورة هبوط سوقية كاملة",
+          "isQualitative": false,
+          "weight": 2.0,
+          "thresholdStr": "المشروع يعمل منذ عامين على الأقل وأثبت صموده في السوق الهابط"
+        },
+        {
+          "id": "team_4_treasury_runway",
+          "nameAr": "خزينة المشروع ومدة التشغيل المالية (Runway)",
+          "isQualitative": true,
+          "weight": 2.0,
+          "thresholdStr": "سيولة في الخزينة تكفي لتمويل التطوير لعامين على الأقل"
+        },
+        {
+          "id": "team_5_active_governance",
+          "nameAr": "حوكمة مجتمعية نشطة (مقترحات وتصويت منتظم)",
+          "isQualitative": true,
+          "weight": 2.0,
+          "thresholdStr": "منصة Snapshot أو حوكمة on-chain ذات مشاركة حقيقية"
+        }
+      ]
+    }
+  ],
+  "exclusionRules": [
+    {
+      "ruleId": "excl_1_anon_team_no_audit",
+      "nameAr": "فريق مجهول الهوية مع عقود ذكية غير مدققة أمنياً",
+      "descriptionAr": "اجتماع انعدام هوية الفريق مع غياب التدقيق الأمني المعتمد يمثل خطراً حرجاً فورياً."
+    },
+    {
+      "ruleId": "excl_2_whale_concentration_60",
+      "nameAr": "حيازة أكبر 10 عناوين تتجاوز 60% بعد الاستبعاد",
+      "descriptionAr": "تركز حاد في المعروض يعرض السوق لخطر تسييل مفاجئ أو تلاعب."
+    },
+    {
+      "ruleId": "excl_3_unlock_exceeds_50_pct",
+      "nameAr": "جدول الفك خلال 12 شهراً يتجاوز 50% من المعروض المتداول",
+      "descriptionAr": "تضخم وإغراق كمي هائل يتجاوز قدرة السوق على الاستيعاب."
+    },
+    {
+      "ruleId": "excl_4_active_regulatory_action",
+      "nameAr": "إجراء قضائي أو تنظيمي نشط يهدد استمرارية المشروع",
+      "descriptionAr": "ملاحقة قانونية أو قرارات حظر رسمية تهدد تشغيل البروتوكول."
+    },
+    {
+      "ruleId": "excl_5_major_unresolved_exploit",
+      "nameAr": "استغلال أمني كبير غير معالج خلال 24 شهراً الأخيرة",
+      "descriptionAr": "اختراق أدى لخسائر جسيمة دون تعويض أو ترقيع أمني جذري."
+    },
+    {
+      "ruleId": "excl_6_project_age_under_12m",
+      "nameAr": "عمر المشروع في السوق أقل من 12 شهراً",
+      "descriptionAr": "حداثة مفرطة تجعل البيانات الإحصائية غير قابلة للتقييم الاستثماري الموثوق."
+    },
+    {
+      "ruleId": "excl_7_liquidity_below_threshold",
+      "nameAr": "حجم تداول 24 ساعة يقل عن حد السيولة الأدنى (1M$)",
+      "descriptionAr": "انخفاض حاد في السيولة يمنع الدخول والخروج دون انزلاق سعري جسيم."
+    }
+  ]
+}
